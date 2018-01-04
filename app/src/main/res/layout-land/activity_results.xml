@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.ResultsActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/certificateframe"
+        android:scaleType="fitXY"
+        />
+
+    <ImageView
+        android:id="@+id/imageHead"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/skywarnglow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageHead"
+        android:layout_centerHorizontal="true"
+        android:text="Certificate of completion"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/userIntroduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHeader"
+        android:layout_centerHorizontal="true"
+        android:text="The following user has completed the Skywarn admittance test"
+        android:textColor="@color/headText"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/userInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userIntroduction"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/accentText"
+        android:textAlignment="center"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/scoreIntroduction"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userInformation"
+        android:layout_centerHorizontal="true"
+        android:text="with a score of"
+        android:textColor="@color/headText"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/scoreInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreIntroduction"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/accentText"
+        android:textAlignment="center"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textFooter"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreInformation"
+        android:layout_centerHorizontal="true"
+        android:text="Congratulations!"
+        android:textColor="@color/headText"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+</RelativeLayout>

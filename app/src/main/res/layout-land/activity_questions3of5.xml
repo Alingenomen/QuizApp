@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbackground"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizapp.Questions1of5Activity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splashbackground"
+        android:orientation="vertical"
+        tools:context="com.example.android.quizapp.Questions1of5Activity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 3"
+            android:textSize="24sp"
+            android:layout_margin="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is a Severe Thunderstorm?"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"/>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="124dp"
+            android:id="@+id/question3">
+            <RadioButton
+                android:id="@+id/radio1_question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A thunderstorm which produces a tornado and large hail (1 inch)"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+            <RadioButton android:id="@+id/radio2_question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A thunderstorm which produces large hail (1 inch) and windgusts up to 58mph"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+            <RadioButton android:id="@+id/radio3_question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A thunderstorm which contains a tornado or windgusts up to 58mph and large hail (1 inch)"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+            <RadioButton android:id="@+id/radio4_question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A thunderstorm which contains a tornado or windgusts up to 58mph or large hail (1 inch)"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:text="Next"
+        android:background="@color/bodyText"
+        android:onClick="nextQuestion"/>
+</RelativeLayout>
+

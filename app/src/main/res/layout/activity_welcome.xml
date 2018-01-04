@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbackground"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizapp.WelcomeActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/skywarnhead"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admittance Test"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="To be admitted as a Spotter in the Skywarn Network you need to pass this admittance test. This test consists of 5 questions, all of which you need to answer. At the end of the test you will see your score. Afterwards your score is submitted to the Skywarn system for peer review"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Applicant info"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="First Name:"
+            android:textSize="18sp"
+            android:textAlignment="textEnd"/>
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter first name"
+            android:inputType="textCapWords"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/headText"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Last Name:"
+            android:textSize="18sp"
+            android:textAlignment="textEnd"/>
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter last name"
+            android:inputType="textCapWords"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/headText"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="I hereby declare my information as correct"
+            android:textColor="@color/headText"
+            android:paddingLeft="8dp"
+            android:id="@+id/agree"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#212121"
+        android:text="Begin Quiz"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="startQuiz"/>
+</LinearLayout>

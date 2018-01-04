@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbackground"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizapp.Questions1of5Activity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splashbackground"
+        android:orientation="vertical"
+        tools:context="com.example.android.quizapp.Questions1of5Activity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 5"
+            android:textSize="24sp"
+            android:layout_margin="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the difference between a funnelcloud and a tornado?"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"/>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="124dp"
+            android:id="@+id/question5">
+            <RadioButton
+                android:id="@+id/radio1_question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A funnelcloud spins more quickly than a tornado"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+            <RadioButton android:id="@+id/radio2_question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Funnel clouds form at the front of a storm while tornadoes form at the back"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+            <RadioButton android:id="@+id/radio3_question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A funnel cloud is usually white-colored while a tornado is dark-colored"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+            <RadioButton android:id="@+id/radio4_question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Funnel clouds do not reach the ground while tornadoes are in contact with the ground"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:text="Results"
+        android:background="@color/bodyText"
+        android:onClick="showResults"/>
+</RelativeLayout>
+

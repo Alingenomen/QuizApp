@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbackground"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizapp.Questions1of5Activity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splashbackground"
+        android:orientation="vertical"
+        tools:context="com.example.android.quizapp.Questions1of5Activity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textSize="24sp"
+            android:layout_margin="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What do the four letters in the acronym ACES stand for?"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"/>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:id="@+id/question1">
+            <RadioButton
+                android:id="@+id/radio1_question1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Average, Communication, Enhanced, Security"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+            <RadioButton android:id="@+id/radio2_question1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Always, Communicate, Escape, Safety"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+            <RadioButton android:id="@+id/radio3_question1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Awareness, Communicate, Escape, Safety"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+            <RadioButton android:id="@+id/radio4_question1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Awareness, Communication, Escape-routes, Safe zones"
+                android:paddingLeft="8dp"
+                android:textColor="#757575"/>
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:text="Next"
+        android:background="@color/bodyText"
+        android:onClick="nextQuestion"/>
+</RelativeLayout>
+
+

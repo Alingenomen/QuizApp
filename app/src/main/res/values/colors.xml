@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bodyText">#212121</color>
+    <color name="headText">#757575</color>
+    <color name="accentText">#424242</color>
+</resources>
