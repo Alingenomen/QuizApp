@@ -13,11 +13,14 @@ public class Questions4of5Activity extends AppCompatActivity {
 
     private int score;
     private String firstName, lastName;
+    private EditText question;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions4of5);
+
+        question = findViewById(R.id.cape);
 
         firstName = getIntent().getStringExtra("firstName");
         lastName = getIntent().getStringExtra("lastName");
@@ -52,8 +55,7 @@ public class Questions4of5Activity extends AppCompatActivity {
 
     // Check if the question has been answered
     private boolean checkAnswered(){
-        EditText Question = findViewById(R.id.cape);
-        String answer = Question.getText().toString();
+        String answer = question.getText().toString();
 
         // If no option selected, the question hasn't been answered
         if (answer.length() < 1) {
@@ -67,8 +69,7 @@ public class Questions4of5Activity extends AppCompatActivity {
 
     // Method to validate the question & update the score if applicable
     private void validateQuestion(){
-        EditText Question = findViewById(R.id.cape);
-        String capeAnswer = Question.getText().toString();
+        String capeAnswer = question.getText().toString();
         String correctAnswer = "convective available potential energy";
 
         // If the correct answer has been given, update the score & display a toast message

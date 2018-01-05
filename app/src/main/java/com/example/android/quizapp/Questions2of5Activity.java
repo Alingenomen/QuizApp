@@ -13,9 +13,15 @@ public class Questions2of5Activity extends AppCompatActivity {
 
     private int score;
     private String firstName, lastName;
+    private CheckBox option1, option2, option3, option4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        option1 = findViewById(R.id.option1);
+        option2 = findViewById(R.id.option2);
+        option3 = findViewById(R.id.option3);
+        option4 = findViewById(R.id.option4);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions2of5);
 
@@ -51,11 +57,6 @@ public class Questions2of5Activity extends AppCompatActivity {
 
     // Check if the question has been answered
     private boolean checkAnswered(){
-        CheckBox option1 = findViewById(R.id.option1);
-        CheckBox option2 = findViewById(R.id.option2);
-        CheckBox option3 = findViewById(R.id.option3);
-        CheckBox option4 = findViewById(R.id.option4);
-
         // If at least one option is selected, the question as been answered
         if (option1.isChecked() || option2.isChecked() || option3.isChecked() || option4.isChecked()) {
             return true;
@@ -68,14 +69,9 @@ public class Questions2of5Activity extends AppCompatActivity {
 
     // Method to validate the question & update the score if applicable
     private void validateQuestion(){
-        CheckBox option1 = findViewById(R.id.option1);
-        CheckBox option2 = findViewById(R.id.option2);
-        CheckBox option3 = findViewById(R.id.option3);
-        CheckBox option4 = findViewById(R.id.option4);
-
         int questionScore = 0;
 
-        // If the correct question has been chosen, update the score & display a toast message
+        // If the correct question has been chosen, update the score
         if (option2.isChecked()) {
             questionScore = questionScore + 1;
         }
@@ -84,7 +80,7 @@ public class Questions2of5Activity extends AppCompatActivity {
             questionScore = questionScore + 1;
         }
 
-        // If the correct question has been chosen, update the score & display a toast message
+        // If the incorrect option has been chosen, update the score
         if (option3.isChecked()) {
             questionScore = questionScore + -1;
         }
@@ -98,7 +94,6 @@ public class Questions2of5Activity extends AppCompatActivity {
         }
         else {
             score = score + questionScore;
-
         }
 
     }

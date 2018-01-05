@@ -79,11 +79,11 @@ public class WelcomeActivity extends AppCompatActivity {
         firstName = firstNameView.getText().toString();
         lastName = lastNameView.getText().toString();
 
-        // If no option selected, at least one of the EditTexts have not been filled
+        // If at least one of the EditTexts have not been filled
         if (firstName.length() < 1 || lastName.length() < 1) {
             return false;
         }
-        // If an option is selected, the question as been answered
+        // If all the EditTexts have been filled
         else{
             return true;
         }

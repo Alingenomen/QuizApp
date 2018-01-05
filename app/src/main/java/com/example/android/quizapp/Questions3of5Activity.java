@@ -13,9 +13,12 @@ public class Questions3of5Activity extends AppCompatActivity {
 
     private int score;
     private String firstName, lastName;
+    private RadioGroup question;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        question = findViewById(R.id.question3);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions3of5);
 
@@ -52,8 +55,7 @@ public class Questions3of5Activity extends AppCompatActivity {
 
     // Check if the question has been answered
     private boolean checkAnswered(){
-        RadioGroup Question = findViewById(R.id.question3);
-        int checkedRadioButtonId = Question.getCheckedRadioButtonId();
+        int checkedRadioButtonId = question.getCheckedRadioButtonId();
 
         // If no option selected, the question hasn't been answered
         if (checkedRadioButtonId == -1) {
@@ -67,8 +69,7 @@ public class Questions3of5Activity extends AppCompatActivity {
 
     // Method to validate the question & update the score if applicable
     private void validateQuestion(){
-        RadioGroup Question = findViewById(R.id.question3);
-        int checkedRadioButtonId = Question.getCheckedRadioButtonId();
+        int checkedRadioButtonId = question.getCheckedRadioButtonId();
 
         // If the correct question has been chosen, update the score & display a toast message
         if (checkedRadioButtonId == R.id.radio4_question3) {
