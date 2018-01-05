@@ -17,10 +17,10 @@ public class Questions3of5Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        question = findViewById(R.id.question3);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions3of5);
+
+        question = findViewById(R.id.question3);
 
         firstName = getIntent().getStringExtra("firstName");
         lastName = getIntent().getStringExtra("lastName");
