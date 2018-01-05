@@ -32,7 +32,7 @@
     <string name="question3Option1">A thunderstorm which produces a tornado and large hail (1 inch)</string>
     <string name="question3Option2">A thunderstorm which produces large hail and windgusts up to 58mph</string>
     <string name="question3Option3">A thunderstorm which contains a tornado or windgusts up to 58mph and large hail (1 inch)</string>
-    <string name="question3Option4">A thunderstorm which contains either a tornado, windgusts up to 58mph or large hail (1 inch)</string>
+    <string name="question3Option4">A thunderstorm which contains a tornado or windgusts up to 58mph or large hail (1 inch)</string>
 
     <string name="question4Label">Question 4</string>
     <string name="question4">What does the acronym CAPE stand for? Write the full term in the textbox below.</string>
@@ -43,6 +43,12 @@
     <string name="question5Option1">A funnelcloud spins more slowly than a tornado</string>
     <string name="question5Option2">Funnel clouds form at the front of a storm while tornadoes form at the back</string>
     <string name="question5Option3">A funnel cloud is usually white-colored while a tornado is dark-colored</string>
-    <string name="question5Option4">Funnel clouds do not reach the ground while tornadoes are in contact with the ground)</string>
+    <string name="question5Option4">Funnel clouds do not reach the ground while tornadoes are in contact with the ground</string>
+
+    <string name="certificateHead">Certificate of completion</string>
+    <string name="certificateDisc">The following user has completed the Skywarn admittance test</string>
+    <string name="certificateScore">with a score of</string>
+    <string name="congratz">Congratulations!</string>
+    <string name="betterLuck">Better luck next time!</string>
 </resources>
 

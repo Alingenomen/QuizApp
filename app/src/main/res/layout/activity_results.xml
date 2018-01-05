@@ -13,7 +13,6 @@
         android:src="@drawable/certificateframe"
         android:scaleType="fitXY"
         />
-
     <ImageView
         android:id="@+id/imageHead"
         android:layout_width="100dp"
@@ -27,20 +26,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageHead"
         android:layout_centerHorizontal="true"
-        android:text="Certificate of completion"
+        android:text="@string/certificateHead"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="@dimen/standard16dp"/>
     <TextView
         android:id="@+id/userIntroduction"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/textHeader"
         android:layout_centerHorizontal="true"
-        android:text="The following user has completed the Skywarn admittance test"
+        android:text="@string/certificateDisc"
         android:textColor="@color/headText"
         android:textAlignment="center"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="@dimen/standard8dp"/>
     <TextView
         android:id="@+id/userInformation"
         android:layout_width="wrap_content"
@@ -49,7 +48,7 @@
         android:layout_centerHorizontal="true"
         android:textColor="@color/accentText"
         android:textAlignment="center"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="@dimen/standard8dp"
         android:textSize="16sp"
         android:textStyle="bold"/>
     <TextView
@@ -58,10 +57,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/userInformation"
         android:layout_centerHorizontal="true"
-        android:text="with a score of"
+        android:text="@string/certificateScore"
         android:textColor="@color/headText"
         android:textAlignment="center"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="@dimen/standard8dp"/>
     <TextView
         android:id="@+id/scoreInformation"
         android:layout_width="wrap_content"
@@ -70,7 +69,7 @@
         android:layout_centerHorizontal="true"
         android:textColor="@color/accentText"
         android:textAlignment="center"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="@dimen/standard64dp"
         android:textSize="16sp"
         android:textStyle="bold"/>
     <TextView
@@ -79,10 +78,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/scoreInformation"
         android:layout_centerHorizontal="true"
-        android:text="Congratulations!"
+        android:text="@string/congratz"
         android:textColor="@color/headText"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="@dimen/standard8dp"/>
 
 </RelativeLayout>

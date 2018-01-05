@@ -19,5 +19,10 @@ public class ResultsActivity extends AppCompatActivity {
         applicant.setText(firstName + " " + lastName);
         TextView scoreText = findViewById(R.id.scoreInformation);
         scoreText.setText(Integer.toString(score) + "/" + "10");
+        TextView footer = findViewById(R.id.textFooter);
+        if (score < 6){
+            footer.setText(R.string.betterLuck);
+        }
+
     }
 }
