@@ -1,3 +1,48 @@
 <resources>
     <string name="app_name">Quiz App</string>
+
+    <string name="admittanceTest">Admittance Test</string>
+    <string name="admittanceDisc">To be admitted as a Spotter in the Skywarn Network you need to pass this admittance test. This test consists of 5 questions, all of which you need to answer. Afterwards you will see your score.</string>
+    <string name="applicantInfo">Applicant info</string>
+    <string name="firstName">First name:</string>
+    <string name="lastName">Last name:</string>
+    <string name="firstNameHint">Enter first name</string>
+    <string name="lastNameHint">Enter last name</string>
+    <string name="declaration">I hereby declare my information as correct</string>
+    <string name="next">next</string>
+    <string name="beginQuiz">Begin quiz</string>
+    <string name="results">Results</string>
+
+    <string name="question1Label">Question 1</string>
+    <string name="question1">What do the four letters in the acronym ACES stand for?</string>
+    <string name="question1Option1">Average, Communication, Enhanced, Security</string>
+    <string name="question1Option2">Always, Communicate, Escape, Safety</string>
+    <string name="question1Option3">Awareness, Communicate, Escape, Safety</string>
+    <string name="question1Option4">Awareness, Communication, Escape-routes, Safe zones</string>
+
+    <string name="question2Label">Question 2</string>
+    <string name="question2">Which of the following tools and/or comparison methods are suitable for reporting hail size? Select all that apply.</string>
+    <string name="question2Option1">A body part such as a hand balled into a fist</string>
+    <string name="question2Option2">A ruler or something else with visible measurements</string>
+    <string name="question2Option3">A common object such as a tube of lipstick</string>
+    <string name="question2Option4">A coin to use as a reference</string>
+
+    <string name="question3Label">Question 3</string>
+    <string name="question3">What qualifies as a Severe Thunderstorm?</string>
+    <string name="question3Option1">A thunderstorm which produces a tornado and large hail (1 inch)</string>
+    <string name="question3Option2">A thunderstorm which produces large hail and windgusts up to 58mph</string>
+    <string name="question3Option3">A thunderstorm which contains a tornado or windgusts up to 58mph and large hail (1 inch)</string>
+    <string name="question3Option4">A thunderstorm which contains either a tornado, windgusts up to 58mph or large hail (1 inch)</string>
+
+    <string name="question4Label">Question 4</string>
+    <string name="question4">What does the acronym CAPE stand for? Write the full term in the textbox below.</string>
+    <string name="question4Hint">What is CAPE?</string>
+
+    <string name="question5Label">Question 5</string>
+    <string name="question5">What is the difference between a funnelcloud and a tornado?</string>
+    <string name="question5Option1">A funnelcloud spins more slowly than a tornado</string>
+    <string name="question5Option2">Funnel clouds form at the front of a storm while tornadoes form at the back</string>
+    <string name="question5Option3">A funnel cloud is usually white-colored while a tornado is dark-colored</string>
+    <string name="question5Option4">Funnel clouds do not reach the ground while tornadoes are in contact with the ground)</string>
 </resources>
+

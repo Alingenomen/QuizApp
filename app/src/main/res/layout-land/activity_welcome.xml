@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Admittance Test"
+            android:text="@string/admittanceTest"
             android:layout_gravity="center_horizontal"
             android:textSize="24sp"
             />
@@ -30,19 +30,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
-            android:text="To be admitted as a Spotter in the Skywarn Network you need to pass this admittance test. This test consists of 5 questions, all of which you need to answer. At the end of the test you will see your score. Afterwards your score is submitted to the Skywarn system for peer review"
+            android:layout_marginRight="@dimen/standard16dp"
+            android:layout_marginLeft="@dimen/standard16dp"
+            android:text="@string/admittanceDisc"
             android:textColor="#000000"
             android:layout_gravity="center_horizontal"
             android:textAlignment="center"
+            android:textSize="16sp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Applicant info"
-            android:layout_marginTop="8dp"
+            android:text="@string/applicantInfo"
+            android:layout_marginTop="@dimen/standard8dp"
             android:layout_gravity="center_horizontal"
             android:textSize="24sp"
             />
@@ -57,17 +58,17 @@
             <TextView
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="First Name:"
+                android:text="@string/firstName"
                 android:textSize="18sp"
                 android:textAlignment="textEnd"/>
             <EditText
                 android:id="@+id/firstName"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:hint="Enter first name"
+                android:hint="@string/firstNameHint"
                 android:inputType="textCapWords"
                 android:textStyle="bold"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/standard8dp"
                 android:textColor="@color/headText"/>
             <Space
                 android:layout_width="0dp"
@@ -86,17 +87,17 @@
             <TextView
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="Last Name:"
+                android:text="@string/lastName"
                 android:textSize="18sp"
                 android:textAlignment="textEnd"/>
             <EditText
                 android:id="@+id/lastName"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:hint="Enter last name"
+                android:hint="@string/lastNameHint"
                 android:inputType="textCapWords"
                 android:textStyle="bold"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/standard8dp"
                 android:textColor="@color/headText"/>
             <Space
                 android:layout_width="0dp"
@@ -114,10 +115,10 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="I hereby declare my information as correct"
+                android:layout_margin="@dimen/standard8dp"
+                android:text="@string/declaration"
                 android:textColor="@color/headText"
-                android:paddingLeft="8dp"
+                android:paddingLeft="@dimen/standard8dp"
                 android:id="@+id/agree"/>
             <Space
                 android:layout_width="0dp"
@@ -129,8 +130,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#212121"
-            android:text="Begin Quiz"
-            android:layout_margin="8dp"
+            android:text="@string/beginQuiz"
+            android:layout_margin="@dimen/standard8dp"
             android:layout_gravity="center_horizontal"
             android:onClick="startQuiz"/>
     </LinearLayout>
