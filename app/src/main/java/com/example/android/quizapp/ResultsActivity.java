@@ -22,6 +22,8 @@ public class ResultsActivity extends AppCompatActivity {
         TextView footer = findViewById(R.id.textFooter);
         if (score < 6){
             footer.setText(R.string.betterLuck);
+        } else {
+            footer.setText(R.string.congratz);
         }
 
     }

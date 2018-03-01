@@ -33,7 +33,10 @@ public class Questions5of5Activity extends AppCompatActivity {
             // Check for right or wrong answer
             validateQuestion();
 
-            // Move on to the new question
+            // Move on to the results activity & provide a toast message
+
+            displayToast("Your total score was " + score);
+
             Intent intent = new Intent(getApplicationContext(),ResultsActivity.class);
             if (intent.resolveActivity(getPackageManager()) != null) {
                 intent.putExtra("passedScore",score);
